@@ -6,7 +6,7 @@ var gamePattern = [];
 var started = false;
 var level = 0;
 
-$(document).keydown(function(){
+$(".start").click(function(){
     if(!started){
         $("#level-title").text("Level " + level);
         nextSequence();
@@ -66,10 +66,11 @@ function checkAnswer(currentLevel){
         var wrong = new Audio("sounds/wrong.mp3");
         wrong.play();
         $("body").addClass("game-over");
+        $(".start").text("Restart");
         setTimeout(function(){
             $("body").removeClass("game-over");
         },2000);
-        $("h1").text("Game Over, Press Any Key to Restart");
+        $("h1").text("Game Over, Press Restart");
         startOver();    
     }
 }
