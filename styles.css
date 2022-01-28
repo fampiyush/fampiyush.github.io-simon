@@ -26,6 +26,15 @@ body {
   border-radius: 20%;
 }
 
+.start{
+  width: 10%;
+  padding: 0.3rem;
+  margin-bottom: 2%;
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  font-size: 1.1rem;
+  border-radius: 12px;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
@@ -59,4 +68,32 @@ body {
 #footer a{
   text-decoration: none;
   color: #FEF2BF;
+}
+
+@media (max-width:1000px) {
+  .container{
+    width: 70%;
+  }  
+  
+  .btn{
+      display: inline-block;
+      width: 30%;
+    }
+
+  #footer{
+    font-size: 2rem;
+    margin-top: 10%;
+  }
+  #level-title{
+    font-size: 5rem;
+    line-height: 6rem;
+  }
+
+  .start{
+    width: 20%;
+    padding: 0.5rem;
+    font-size: 2rem;
+    margin-bottom: 10%;
+    margin-top: 5%;
+  }
 }
