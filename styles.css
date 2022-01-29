@@ -72,12 +72,13 @@ body {
 
 @media (max-width:1000px) {
   .container{
-    width: 70%;
+    width: 90%;
   }  
   
   .btn{
       display: inline-block;
-      width: 30%;
+      width: 40%;
+      padding-top: 120px;
     }
 
   #footer{
