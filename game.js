@@ -11,6 +11,9 @@ $(".start").click(function(){
         $("#level-title").text("Level " + level);
         nextSequence();
         started = true;
+        $(".start").text("Restart");
+    }else{
+        location.reload();
     }
 })
 
@@ -66,7 +69,6 @@ function checkAnswer(currentLevel){
         var wrong = new Audio("sounds/wrong.mp3");
         wrong.play();
         $("body").addClass("game-over");
-        $(".start").text("Restart");
         setTimeout(function(){
             $("body").removeClass("game-over");
         },2000);
