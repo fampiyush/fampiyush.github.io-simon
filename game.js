@@ -54,7 +54,7 @@ function nextSequence(){
         setTimeout(function(){ 
             $("#"+gamePattern[i]).fadeOut(100).fadeIn(100);
             playSound(gamePattern[i]); 
-        },i*500);  
+        },i*300);  
     })(i);    
     }
 }
